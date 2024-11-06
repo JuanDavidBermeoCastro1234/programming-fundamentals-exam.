@@ -1,12 +1,9 @@
-voltaje=float(input("por favor ingrese el voltaje: "))
-voltaje2=float(input("por favor ingrese el voltaje: "))
-voltaje3=float(input("por favor ingrese el voltaje: "))
-voltaje4=float(input("por favor ingrese el voltaje: "))
-voltaje5=float(input("por favor ingrese el voltaje: "))
+import math 
+lado_del_triangulo=float(input("ingrese el lado del triangulo por favor: "))
 
-promedio= voltaje+voltaje2+voltaje3+voltaje4 /5
+area= math.sqrt(3/4*lado_del_triangulo**2)
 
-if promedio<220:
-    print(f"voltaje {promedio:.2f} correcto ")
+if area<1000:
+    print(f"el area es {area} ")
 else :
-    print("alto voltaje ") 
+    print("DATOS NO VALIDOS")
